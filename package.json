@@ -1,0 +1,18 @@
+{
+  "name": "peoplecounter2",
+  "version": "1.0.0",
+  "description": "Second major version of my IOT People Counter application which was based on the Raspberry Pi and motion sensors.  This version counts people by uniquely identifying them via wireless MAC address and other wireless technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IOT",
+    "People",
+    "Counter",
+    "OpenText",
+    "BIRT"
+  ],
+  "author": "Kristopher Clark",
+  "license": "MIT"
+}
