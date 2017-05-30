@@ -4,7 +4,8 @@
   "description": "Second major version of my IOT People Counter application which was based on the Raspberry Pi and motion sensors.  This version counts people by uniquely identifying them via wireless MAC address and other wireless technologies.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test-unit",
+    "test-unit": "NODE_ENV=test mocha --require co-mocha 'lib/*.spec.js'"
   },
   "keywords": [
     "IOT",
@@ -14,5 +15,15 @@
     "BIRT"
   ],
   "author": "Kristopher Clark",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-wifi-scanner": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "co-mocha": "^1.2.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.2",
+    "sinon-chai": "^2.10.0"
+  }
 }
